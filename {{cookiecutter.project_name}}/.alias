@@ -1,0 +1,4 @@
+alias build_{cookiecutter.project_name}_api_dev="docker build -t {cookiecutter.project_name}_api -f Dockerfile.dev ."
+alias run_{cookiecutter.project_name}_api_dev="docker run -it --rm --name bioinstory_api -p 10002:80 -v `pwd`/backend:/code/backend {cookiecutter.project_name}_api"
+source venv/bin/activate
+black="black -l 120"
